@@ -110,7 +110,7 @@ Estos hechos están confirmados leyendo el descompilado. **No se deducen de la d
 
 ## 6. Flujo de Trabajo con el Agente (OpenCode)
 
-### Commits
+### Commits y push
 
 Cuando el usuario pida hacer un commit, **cargar y seguir la skill especializada `git-commit`**
 antes de ejecutar nada. No improvisar el mensaje ni el flujo: la skill define el análisis del diff,
@@ -120,6 +120,20 @@ Reglas que no se negocian:
 - Nunca añadir atribución de IA ni `Co-Authored-By`.
 - Un commit por unidad lógica de trabajo.
 - No commitear secretos, credenciales ni nada dentro de `recursos/`.
+
+#### Confirmación obligatoria (commit y push)
+
+Al terminar cada fase de [`docs/06-plan-implementacion.md`](docs/06-plan-implementacion.md):
+
+1. Reportar el resultado de la fase y su gate.
+2. **Preguntar** si se quiere hacer el commit. No commitear por iniciativa propia.
+3. Commitear **solo** tras confirmación explícita del usuario.
+4. **Preguntar** aparte si se quiere hacer el push. Son dos permisos separados: confirmar el commit
+   no autoriza el push.
+5. Pushear **solo** tras confirmación explícita del usuario.
+
+Si el usuario dice que no, dejar los cambios en el árbol de trabajo y seguir. Nunca adelantar el
+commit ni el push "para no molestar" ni "porque el cambio es obvio".
 
 ### Fase 0 — Análisis del mod original (solo referencia local)
 1. Colocar el JAR de Desert Mining 1.20.1 en `recursos/`.
