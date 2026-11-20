@@ -6,6 +6,10 @@ Reimplementación **clean-room** del mod **Desert Mining** (Forge 1.20.1, v1.0.0
 **Forge 1.20.1**. Se replica la funcionalidad observable; el código, los nombres finales y los
 assets son propios.
 
+**División de la documentación:** el [`README.md`](../README.md) de la raíz está escrito para
+jugadores. Todo lo de esta carpeta es documentación técnica y de planeación: especificación
+funcional (`01`–`05`), plan de implementación (`06`) y guía de desarrollo (`07`).
+
 ## Convención de marcado (leer antes de todo)
 
 Cada afirmación técnica de esta documentación lleva una marca de origen:
@@ -38,11 +42,13 @@ Si algo no tiene marca, es contexto general. **No inventar valores sin marca [R]
 | [`04-worldgen.md`](04-worldgen.md) | Generación de menas en el desierto |
 | [`05-configuracion.md`](05-configuracion.md) | Config del mod (propuesta) |
 | [`06-plan-implementacion.md`](06-plan-implementacion.md) | Plan por fases con criterios de aceptación |
+| [`07-desarrollo.md`](07-desarrollo.md) | Guía para desarrolladores y creadores de contenido compatible |
 
-Documentos de planeación en la raíz del repo:
+Documentos en la raíz del repo:
 
 | Documento | Contenido |
 | :--- | :--- |
+| `README.md` | Entrada para **jugadores**: qué es el mod, qué añade, cómo se juega |
 | `AGENTS.md` | Reglas del proyecto, stack, prohibiciones legales |
 | `openspec/project.md` | Contexto SDD, matriz funcional resumida |
 | `openspec/changes/0001-forge-reimplementation/proposal.md` | Proposal SDD |
@@ -62,6 +68,7 @@ Documentos de planeación en la raíz del repo:
 | **D1** | ~~Package root `com.<usuario>.desertminingreborn`~~ **RESUELTO**: `com.rexthar.desertminingreborn` | — |
 | **D2** | Assets: origen y aprobación | Fase G |
 | **D3** | ¿Las menas conservan la gravedad? | Fase B |
+| **D4** | Rango Y del worldgen (0–255 fiel vs por capas) | Fase D |
 
 **D3** merece discusión: el original hereda de `FallingBlock` **[R]**, así que las menas caen como
 arena. Es parte de su identidad ("minerales compuestos de arena"), pero es una fuente de bugs
