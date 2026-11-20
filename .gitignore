@@ -16,3 +16,6 @@ recursos/
 
 # Antigravity CLI local config
 .antigravitycli/
+
+# Obsidian vault config (local editor state)
+.obsidian/
