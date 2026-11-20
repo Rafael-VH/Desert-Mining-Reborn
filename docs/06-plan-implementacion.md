@@ -51,6 +51,10 @@ hace que el clean room sea real y no una declaración de intenciones.
 
 **Objetivo**: un proyecto Forge 1.20.1 que compila vacío.
 
+**Estado**: **completada** (T1–T9). `./gradlew build` termina en `BUILD SUCCESSFUL` y el `.jar`
+generado contiene solo `DesertMiningReborn.class`, `META-INF/mods.toml` y `pack.mcmeta`. Queda
+pendiente la comprobación manual en cliente (ver criterios).
+
 ### Tareas
 
 | ID | Tarea | Archivo |
@@ -91,9 +95,9 @@ mod_license=MIT
 
 ### Criterio de aceptación
 
-- [ ] `./gradlew build` termina en `BUILD SUCCESSFUL`.
+- [x] `./gradlew build` termina en `BUILD SUCCESSFUL`.
 - [ ] El `.jar` generado carga en un cliente 1.20.1 con Forge 47.4.28 sin errores en el log.
-- [ ] No hay ningún archivo de `recursos/` en el árbol de `src/`.
+- [x] No hay ningún archivo de `recursos/` en el árbol de `src/`.
 
 ---
 

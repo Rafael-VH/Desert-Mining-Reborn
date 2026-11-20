@@ -2,6 +2,30 @@
 # Recursos
 recursos/
 
+# Gradle
+/run/
+/run-data/
+/build/
+.gradle/
+.gradle-cache/
+
+# Compiled artifacts, but keep the wrapper jar tracked
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+*.launch
+.classpath
+.project
+.settings/
+bin/
+out/
+eclipse/
+
 # CommandCode CLI local config
 .commandcode/
 

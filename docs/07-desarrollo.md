@@ -40,9 +40,8 @@ Si vienes de una versión moderna, olvídate de esto:
 
 ## 2. Puesta en marcha
 
-> **Estado:** el proyecto Gradle todavía no existe. La Fase A de
-> [`06-plan-implementacion.md`](06-plan-implementacion.md) lo crea. Hasta entonces estos comandos
-> no funcionan.
+> **Estado:** el proyecto Gradle ya existe (Fase A cerrada). Wrapper de Gradle 8.8, ForgeGradle 6,
+> toolchain Java 17.
 
 ```bash
 ./gradlew build            # compilar y empaquetar
@@ -70,7 +69,8 @@ Si vienes de una versión moderna, olvídate de esto:
 ├── docs/                  Documentación funcional y de desarrollo
 ├── openspec/              Contexto SDD y proposal del cambio
 ├── recursos/              Material de referencia — IGNORADO POR GIT
-└── src/                   Código del mod (aún no existe)
+├── gradle/wrapper/        Wrapper de Gradle 8.8
+└── src/                   Código del mod (clase @Mod vacía por ahora)
 ```
 
 `recursos/` contiene el JAR original, las extracciones y el descompilado. **Es solo material de
@@ -260,11 +260,12 @@ Detalle completo en [`05-configuracion.md`](05-configuracion.md).
 | Análisis funcional | completo |
 | Documentación | completa |
 | Plan de implementación | escrito |
-| Proyecto Gradle | **no existe** |
-| Código | **no existe** |
+| Proyecto Gradle | **existe** (Fase A cerrada) |
+| Código | clase `@Mod` vacía |
 | Assets | pendientes de aprobación |
 
-Siguiente paso: **Fase A** de [`06-plan-implementacion.md`](06-plan-implementacion.md).
+Siguiente paso: **Fase B** de [`06-plan-implementacion.md`](06-plan-implementacion.md). Antes hay que
+resolver **D3** (¿las menas conservan la gravedad?).
 
 Decisiones todavía abiertas:
 
