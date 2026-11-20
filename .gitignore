@@ -1,0 +1,18 @@
+
+# Recursos
+recursos/
+
+# CommandCode CLI local config
+.commandcode/
+
+# Local AI runtime state
+.atl/
+
+# FreeBuff CLI local config
+.freebuff/
+
+# PlayWright CLI
+.playwright-cli/
+
+# Antigravity CLI local config
+.antigravitycli/
