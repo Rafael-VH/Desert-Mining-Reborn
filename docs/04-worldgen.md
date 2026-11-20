@@ -148,7 +148,7 @@ Para que la config pueda controlar el worldgen, implementar el `BiomeModifier` *
 `DeferredRegister<BiomeModifier>` y su codec, en lugar de los 5 JSON de
 `data/<ns>/forge/biome_modifier/`.
 
-Así el jugador puede apagar minerales individualmente desde `desert-mining-reborn.toml` sin editar
+Así el jugador puede apagar minerales individualmente desde `desert_mining_reborn-common.toml` sin editar
 datapacks. Ver [`05-configuracion.md`](05-configuracion.md) §2.
 
 Costo: un poco más de código Java. Beneficio: la config deja de ser decorativa.

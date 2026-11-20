@@ -272,7 +272,7 @@ pool: 1 roll
 
 ## Fase F — Configuración
 
-**Objetivo**: `desert-mining-reborn.toml` real y aplicado.
+**Objetivo**: `config/desert_mining_reborn-common.toml` real y aplicado.
 
 ### Tareas
 

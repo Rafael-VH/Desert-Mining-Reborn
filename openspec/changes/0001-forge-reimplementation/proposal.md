@@ -25,7 +25,7 @@ Se construye el proyecto completo (hoy el repo solo tiene documentación):
 6. Recetas de procesado chunk + tamiz → recurso vanilla.
 7. Worldgen de las 5 menas en bioma desierto.
 8. Loot tables, recetas de crafteo y tags.
-9. Config `desert-mining-reborn.toml`.
+9. Config `desert_mining_reborn-common.toml`.
 10. Assets propios provistos por el usuario.
 
 ## Fuera de alcance

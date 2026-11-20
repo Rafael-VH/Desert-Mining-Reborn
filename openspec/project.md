@@ -24,7 +24,7 @@ estructura de clases del original. `recursos/` es material de **referencia**, nu
 | Metadata | `META-INF/mods.toml` (Forge, no NeoForge) |
 | Datos de item | **NBT** (`ItemStack` tag) — los Data Components son de 1.20.5+ |
 | Namespace | `desert_mining_reborn` |
-| Config | `config/desert-mining-reborn.toml` (`ForgeConfigSpec`) |
+| Config | `config/desert_mining_reborn-common.toml` (`ForgeConfigSpec`) |
 | Package root | `com.rexthar.desertminingreborn` — **definido** |
 
 ## Estado actual del repositorio (verificado)

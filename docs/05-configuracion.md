@@ -18,7 +18,7 @@ nada.
 
 ## 2. Archivo y formato
 
-- Ruta: `config/desert-mining-reborn.toml`
+- Ruta: `config/desert_mining_reborn-common.toml` (Forge deriva el nombre del mod id)
 - API: `ForgeConfigSpec` (Forge 1.20.1)
 - Recarga: requiere reinicio (los valores de worldgen se leen al cargar el servidor)
 
